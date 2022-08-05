@@ -10,7 +10,7 @@ use App\Controllers\User\User;
 
 $route = new Router();
 $route->add('/home', new DocumentController, 'index');
-$route->add('/test', new DocumentController, 'test');
+$route->add('/test/{user}/{id}/edit', new DocumentController, 'test');
 
 
 

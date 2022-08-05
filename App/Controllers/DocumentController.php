@@ -6,8 +6,8 @@ use App\Layouts\Layout;
 
 class DocumentController {
 
-    public function test(){
-        echo "test";
+    public function test($param){
+        echo "test".$param;
     }
 
     public function index()
