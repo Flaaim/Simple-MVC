@@ -12,10 +12,10 @@ class DocumentController {
 
     public function index()
     {
-
-        //echo "Hello world";
         return new Layout('Test title', 'views/test.tpl.php', 'layout.tpl.php');
-        
+    }
+    public function add(){
+        var_dump($_POST);
     }
 }
 

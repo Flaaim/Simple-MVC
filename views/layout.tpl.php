@@ -8,17 +8,15 @@
     <title><?= $pagetitle ?></title>
 </head>
 <body>
+
+    <?php include_once 'parts/navbar.tpl.php'; ?> 
+           
     <div class="container">
-        <div class="row">
-            <div class="column">
-            <?php include_once 'parts/navbar.tpl.php'; ?> 
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
             <div class="col-md-6">
-                <?php include_once $content; ?> 
+                <?php 
+                require_once $content; 
+                ?> 
        
             </div>
         </div>

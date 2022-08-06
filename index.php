@@ -9,8 +9,9 @@ use App\Controllers\User\User;
 
 
 $route = new Router();
-$route->add('/home', new DocumentController, 'index');
+$route->add('/', new DocumentController, 'index');
 $route->add('/test/{user}/{id}/edit', new DocumentController, 'test');
+$route->add('/add', new DocumentController, 'add');
 
 
 
